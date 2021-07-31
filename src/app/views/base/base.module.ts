@@ -47,6 +47,9 @@ import { NavbarsComponent } from './navbars/navbars.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { ManageLeadComponent } from './manage-lead/manage-lead.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -74,7 +77,9 @@ import { BaseRoutingModule } from './base-routing.module';
     PopoversComponent,
     ProgressComponent,
     TooltipsComponent,
-    NavbarsComponent
+    NavbarsComponent,
+    ManageLeadComponent,
+    HttpClientModule,
   ]
 })
 export class BaseModule { }

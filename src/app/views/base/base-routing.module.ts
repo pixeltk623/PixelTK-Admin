@@ -13,6 +13,7 @@ import { PopoversComponent } from './popovers.component';
 import { ProgressComponent } from './progress.component';
 import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
+import { ManageLeadComponent } from './manage-lead/manage-lead.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,13 @@ const routes: Routes = [
       {
         path: 'cards',
         component: CardsComponent,
+        data: {
+          title: 'Cards'
+        }
+      },
+      {
+        path: 'manage-leads',
+        component: ManageLeadComponent,
         data: {
           title: 'Cards'
         }
