@@ -1,0 +1,106 @@
+<section id="container" class="">
+    <app-header></app-header>
+    <app-aside></app-aside>
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <!--overview start-->
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="fa fa-laptop"></i>Dashboard</li>
+            </ol>
+          </div>
+        </div>
+
+    
+        <!--/.row-->
+
+
+
+        <!-- Today status end -->
+
+
+
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2><i class="fa fa-flag-o red"></i><strong>All Candidates</strong></h2>
+                <div class="panel-actions">
+                  <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                </div>
+              </div>
+              <div class="panel-body">
+
+                <!-- {{allLeads |json }} -->
+                <table class="table bootstrap-datatable countries">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Full Name</th>
+                      <th>Mobile</th>
+                      <th>Email</th>
+                      <th>Course</th>
+                      <th>Inquiry Date</th>
+                      <th>Manage</th>
+                    </tr>
+                  </thead>
+                 <tbody>
+                    <tr *ngFor="let item of allLeads.Inquiry; let i = index">
+                      <td>{{ (i+1) }}</td>
+                      <td>{{ item.CandidateName }}</td>
+                      <td>{{ item.mobile }}</td>
+                      <td>{{ item.email }}</td>
+                      <td>{{ item.course }}</td>
+                      <td>{{ item.inquiry_date }}</td>
+                      <td>
+                        <a href="" class="btn btn-primary" style="margin: 3px;">Edit</a>
+                        <a href="" class="btn btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                 </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+          <!--/col-->
+
+          <!--/col-->
+
+        </div>
+
+
+
+        <!-- statics end -->
+
+
+
+
+        <!-- project team & activity start -->
+
+        <!-- project team & activity end -->
+
+      </section>
+      <div class="text-right">
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
+          -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </section>
+    <!--main content end-->
+  </section>
+  
